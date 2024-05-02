@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="proyecto1.css">
+</head>
+<body>
+    <div class="container">
+        <div>
+          <h1 id="title">freeCodeCamp Survey Form</h1>
+          <p id="description">Este es mi trabajo front End</p>
+        </div>
+      </div>
+      <div class="formulario">
+      <form id="survey-form">
+        <label for="age" id="number-label">Name</lebel>
+        <input id="name" name="nombre" type="text" placeholder="Escribe tu nombre" required title="Por favor, ingresa tu nombre">
+        <label for="email" id="email-label">Email</lebel>
+        <input id="email" name="email"type="email"placeholder="Escribe tu correo"required title="Por favor, ingresa tu correo"></input>
+        <lebel>Age
+      (optional)</lebel>
+      <input id="number"name="number"type="number"placeholder="Escribe tu edad"required title="Por favor, ingresa tu edad"min="0"max="100"></input>
+      <label id="name-label">Which option best describes your current role?</label>
+      <lebel id="pais">Pais</lebel>
+      <select id="dropdown">
+        <option value="1">estudiante</option>
+        <option value="2">trabajo</option>
+        <option value="3">profesion</option>
+        <option value="4">deportes</option>
+        <option value="5">pasatiempo</option>
+      </select>
+      <div>
+        <p>¿Recomendarías freeCodeCamp a un amigo?</p>
+       <form id="survey-form" action="/submit_form" method="POST">
+          <label for="opcion1">Opción 1:</label>
+          <input type="radio" id="opcion1" name="opcion" value="opcion1"><br>
+          
+          <label for="opcion2">Opción 2:</label>
+          <input type="radio" id="opcion2" name="opcion" value="opcion2"><br>
+          
+          <label for="checkbox1">Casilla de verificación 1:</label>
+          <input type="checkbox" id="checkbox1" name="checkbox1" value="checkbox1"><br>
+          
+          <label for="checkbox2">Casilla de verificación 2:</label>
+          <input type="checkbox" id="checkbox2" name="checkbox2" value="checkbox2"><br>
+      
+          <textarea id="mensaje" name="mensaje" rows="4" cols="50" placeholder="Escribe tu mensaje aquí" required></textarea><br>
+          
+          <input type="submit" value="Submit">
+      </form>
+      
+      </div>
+      <form id="survey-form" action="/submit_form" method="POST">
+          <!-- Otros campos del formulario aquí -->
+          <input type="submit" value="Submit" id="submit">
+      </form>
+      
+      </form>
+      </div>
+</body>
+</html>

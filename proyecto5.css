@@ -1,0 +1,23 @@
+.nav-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  #navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #ffffff;  
+  }
+  
+  .nav-list li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .nav-list li {
+      display: block;
+      margin-bottom: 10px;
+    }
+  }
